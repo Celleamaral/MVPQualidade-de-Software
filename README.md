@@ -1,35 +1,41 @@
 # MVPQualidade-de-Software
-# Preditor de Risco de Doença Cardíaca
 
-Este projeto é um MVP desenvolvido para a disciplina de Engenharia de Sistemas de Software Inteligentes. Ele utiliza um modelo de classificação para prever a chance de uma pessoa apresentar risco de doença cardíaca, com base em características clínicas.
+# MVP - Classificação de Avaliações de Viagem
 
----
+Este projeto tem como objetivo aplicar técnicas de Machine Learning para prever a nota de avaliações de viagem, com base em características do review.
 
-## 💡 Objetivo
+## Estrutura do Projeto
 
-Desenvolver um pipeline completo de machine learning com aplicação full stack para predizer se uma pessoa tem risco cardíaco, com base em um dataset público de saúde.
+- `notebook/`: Notebook do Google Colab com todo o processo de modelagem e análise.
+- `backend/`: Aplicação Flask com API que carrega o modelo e responde previsões.
+- `frontend/`: Interface simples em HTML para envio de dados.
+- `tests/`: Teste automatizado com PyTest.
+- `requirements.txt`: Lista de dependências.
 
----
+## Execução
 
-## 📊 Dataset
+### Instalar dependências
+```bash
+pip install -r requirements.txt
+```
 
-- Fonte: UCI Heart Disease (via Kaggle)
-- URL: https://raw.githubusercontent.com/datablist/sample-csv-files/main/files/people/heart.csv
-- Target: `target` (1 = risco cardíaco, 0 = sem risco)
-- Atributos: idade, sexo, pressão, colesterol, entre outros (13 no total)
+### Executar backend Flask
+```bash
+cd backend
+python app.py
+```
 
----
+### Abrir frontend
+Abra `frontend/index.html` em seu navegador.
 
-## ⚙️ Tecnologias Utilizadas
+### Executar testes
+```bash
+pytest tests/test_modelo.py
+```
 
-- Python + Scikit-Learn
-- Google Colab
-- Flask (Back-end)
-- HTML + JavaScript (Front-end)
-- PyTest (Testes)
-- Git + GitHub
+## Link do Notebook no Colab
+(coloque o link após salvar o notebook no GitHub via Colab)
 
----
-
-## 📁 Estrutura do Projeto
+## Link do vídeo de demonstração
+(coloque o link do YouTube)
 
